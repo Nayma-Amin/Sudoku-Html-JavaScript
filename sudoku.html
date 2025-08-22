@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sudoku — Game by Nishy</title>
+  <link rel="stylesheet" href="sudoku.css">
+</head>
+<body>
+  <div class="app">
+    <section class="card">
+      <div class="header">
+        <div class="title"><span class="dot"></span> Sudoku — Developed by Nishy</div>
+        <div class="controls">
+          <span class="pill">⏱ <span id="timer">00:00</span></span>
+          <span class="pill">❌ Mistakes: <span id="mistakes">0</span></span>
+          <select id="difficulty" title="Difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <button id="newGame" class="primary">New Puzzle</button>
+        </div>
+      </div>
+
+      <div class="board-wrap">
+        <div id="board" class="board" aria-label="Sudoku board" role="grid"></div>
+      </div>
+    </section>
+
+    <aside class="side">
+      <section class="card">
+        <div class="header">
+          <div class="title"><span class="dot" style="background:var(--accent-2)"></span> Controls</div>
+        </div>
+        <div class="stats">
+          <button id="solve" class="good">Solve</button>
+          <button id="hint">Hint</button>
+          <button id="check" class="ghost">Check Board</button>
+          <button id="reset" class="bad">Reset</button>
+        </div>
+
+        <h4 style="margin:18px 4px 10px;">Number Pad</h4>
+        <div class="numpad" id="numpad">
+        </div>
+
+        <p class="footer-note" style="margin-top:16px">
+          Tip: Click a cell and use your keyboard or the keypad on screen (1–9, 0/Backspace to erase).<br/>
+          Row/column/box added highlights to help you avoid mistakes.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="header">
+          <div class="title"><span class="dot" style="background:#fff04d"></span> About</div>
+        </div>
+        <p class="about-text">
+          This is a web based Sudoku built with HTML, CSS, and JavaScript. Includes interactive play,
+          difficulty presets, solver (backtracking), hinting, smart highlighting, timer, and mistake tracking.
+        </p>
+      </section>
+    </aside>
+  </div>
+
+  <script src="sudoku.js"></script>
+</body>
+</html>
