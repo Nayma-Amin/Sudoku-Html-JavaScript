@@ -32,7 +32,6 @@ body {
   padding: 24px;
 }
 
-/* Layout */
 .app {
   width: min(1100px, 96vw);
   display: grid;
@@ -93,7 +92,6 @@ button.ghost{ background: transparent; border: 1px dashed rgba(255,255,255,.18);
   color: var(--muted);
 }
 
-/* Sudoku Board */
 .board-wrap {
   padding: 14px;
   border-radius: 20px;
